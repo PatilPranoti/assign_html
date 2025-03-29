@@ -1,0 +1,127 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<div>
+
+<div class="center">
+  
+  <input type="radio" name="unit1"onmouseover="openDropdown('Unit1')">
+  <label>1 Unit</label>
+  <label for="price1">$10.00 USD</label>
+ 
+</div>
+
+<div id="Unit1" class="content">
+    <div class="dropdown-container">
+        <div>
+            <label for="color1">Choose a color:</label>
+            <select id="color1">
+                <option value="gray">Gray</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+        </div>
+        <div>
+            <label for="size1">Choose a size:</label>
+            <select id="size1">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="center">
+  <input type="radio" name="unit2" onmouseover="openDropdown('Unit2')">
+  <label>2 Unit</label>
+  <label for="price2">$20.00 USD</label>
+ </div>
+
+<div id="Unit2" class="content">
+    <div class="dropdown-container">
+        <div>
+            <label for="color2">Choose a color:</label>
+            <select id="color2">
+                <option value="white">White</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+        </div>
+        <div>
+            <label for="size2">Choose a size:</label>
+            <select id="size2">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+  <div class="center">
+  <input type="radio" name="unit3" onmouseover="openDropdown('Unit3')">
+  <label>3 Unit</label>
+  <label for="price3">$30.00 USD</label>
+   </div>
+
+<div id="Unit3" class="content">
+    <div class="dropdown-container">
+        <div>
+            <label for="color3">Choose a color:</label>
+            <select id="color3">
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+        </div>
+        <div>
+            <label for="size3">Choose a size:</label>
+            <select id="size3">
+                <option value="XXL">XXL</option>
+                <option value="XL">XL</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="button-container">
+
+  <label style="color:red;text-align:left;"><cite>Free Delivery</cite></label>
+    <label style="text-align:right;">Total:$20.00 USD</label>
+
+    <button class="submit-button">Add to Cart</button>
+</div>
+<p><small><cite>@ Powered by Pumper</cite></small></p>
+
+
+</div>
+
+
+
+
+<script>
+function openDropdown(unitId) {
+  contents = document.getElementsByClassName("content");
+  for (i = 0; i < contents.length; i++) {
+    contents[i].style.display = "none";
+  }
+  
+  document.getElementById(unitId).style.display = "block";
+  }
+
+</script>
+</body>
+</html>
